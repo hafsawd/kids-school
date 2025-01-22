@@ -190,9 +190,80 @@ nav{
     color: #fff;
 }
 /* stories section start here */
+#stories{
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%) , url(assets/bg.png) ;
+}
+.story-card-container{
+    display: flex;
+    gap: 18px;    
+    flex-basis: 50%;
+    align-items: center;
+}
+.story-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #fff;
+    border-radius: 16px ;
+    
+}
+.story-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;  
+}
+.story-card-content{
+    padding: 50px 40px; 
+    position: relative;
+}
+.absolute-btn{
+    position: absolute;
+    top: -18px;
+    left: 40px;
+    padding: 8px 16px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.story-card-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+.story-card-container p{
+    font-family: "Raleway", serif; 
+    font-size: 15.34px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    margin-top: 40px;
+}
+.wrap-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    align-items: center;
+}
+.wrap-div h3{
+    font-size: 14px;
+}
+.absolute-btn-2{
+    background-color: rgb(93, 88, 240);
+}
+.absolute-btn-1{
+    background-color: rgb(149, 178, 38);
+}
+.btn-div{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+/* footer design */
+footer{
+    background: rgb(1, 172, 253);
+}
 
-
-/* responsive design  */
 @media screen and (max-width:576px) {
     /* common css */
     .btn{
@@ -213,10 +284,8 @@ nav{
         flex-direction: column-reverse; 
         padding: 10px;       
     }
-    .hero-img{
-        display: none;
-        
-        width: 100%;
+    .hero-img img{
+       width: 100%;
         
     }
     .hero-content{
@@ -244,5 +313,21 @@ nav{
     }
     .card-container{
         flex-direction: column;
+    }
+    /* story section */
+    .story-card-content{
+        padding: 50px 22px; 
+        position: relative;
+    }
+    .absolute-btn{
+        position: absolute;
+        top: -18px;
+        left: 22px;
+        padding: 8px 16px;
+        border-radius: 47.93px;
+        background: rgb(60, 216, 232);
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
     }
 }
