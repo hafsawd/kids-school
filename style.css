@@ -182,11 +182,11 @@ nav{
     height: 60px;
     border-radius: 50%;
     background-color: var(--orange);
-    line-height: 60px;
+    line-height: 75px;
     text-align: center;
 }
 .arrow-item i{
-    font-size: 24px;
+    font-size: 32px;
     color: #fff;
 }
 /* stories section start here */
@@ -263,7 +263,34 @@ nav{
 footer{
     background: rgb(1, 172, 253);
 }
-
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 130px 140px;
+    color: #fff;
+}
+.logo-div-content{
+    display: flex;    
+    gap: 10px;
+    margin-bottom: 36px;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.menu-div ul li{
+    margin-bottom:10px ;
+}
+.menu-div ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.social-div img{
+    margin-right: 10px;
+}
 @media screen and (max-width:576px) {
     /* common css */
     .btn{
@@ -273,6 +300,7 @@ footer{
     
     nav{
         padding: 15px;
+        border-bottom:  0.5px solid rgb(254, 163, 1);;
     }
     .invisible{
         display: none;
@@ -330,4 +358,29 @@ footer{
         color: #fff;
         font-size: 10px;
     }
+    .footer{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .footer-title{
+        font-size: 22px;
+    }
+    .logo-div p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    .logo-div-content h1{
+        font-size:20px;
+    }
+    .logo-div-content img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu-div{
+        margin-bottom: 32px;
+    }
+    .social-div img{
+        margin-right: 8px;
+    }
+   
 }
